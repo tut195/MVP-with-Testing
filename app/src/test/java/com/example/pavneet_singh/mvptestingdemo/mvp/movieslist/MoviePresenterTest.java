@@ -1,29 +1,22 @@
 package com.example.pavneet_singh.mvptestingdemo.mvp.movieslist;
 
-import android.support.test.espresso.IdlingRegistry;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 
 import com.example.pavneet_singh.mvptestingdemo.model.Movie;
 import com.example.pavneet_singh.mvptestingdemo.model.MovieRepo;
-import com.example.pavneet_singh.mvptestingdemo.util.EspressoTestingIdlingResource;
-import com.example.pavneet_singh.mvptestingdemo.model.SimulateMovieClient;
 import com.example.pavneet_singh.mvptestingdemo.util.Utility;
-
-import org.junit.After;
+import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Captor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-
-import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-
-import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
 
 /**
  * Created by Pavneet_Singh on 1/21/18.
